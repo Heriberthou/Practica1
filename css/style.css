@@ -6,6 +6,26 @@
     --color_4: #FFB9B9;
 }
 
+/**
+* @license
+*
+* Font Family: Striper
+* Designed by: Jitka Janečková
+* URL: https://www.fontshare.com/fonts/striper
+* © 2024 Indian Type Foundry
+*
+* Striper Regular
+*/
+@font-face {
+    font-family: 'Striper-Regular';
+    src: url('../fonts/Striper-Regular.woff2') format('woff2'),
+         url('../fonts/Striper-Regular.woff') format('woff'),
+         url('../fonts/Striper-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
 /* Navbar */
 .navbar {
     padding: 2rem;
@@ -388,7 +408,11 @@ footer {
         height: 120px;
         width: 120px;
     }
-    .recomendacion-texto {
-        font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    .recomendaciones .carousel {
+        max-width: 500px;
     }
 }
+
